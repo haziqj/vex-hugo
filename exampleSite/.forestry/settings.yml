@@ -9,26 +9,6 @@ sections:
 - type: document
   path: exampleSite/data/en/homepage.yml
   label: Homepage (en)
-- type: document
-  path: exampleSite/data/fr/homepage.yml
-  label: Homepage (fr)
-- type: heading
-  label: Blog Post
-- type: directory
-  path: exampleSite/content/english/blog
-  label: Post (en)
-  create: documents
-  match: "**/*"
-  new_doc_ext: '20191203072044'
-  templates:
-  - post
-- type: directory
-  path: exampleSite/content/french/blog
-  label: Post (fr)
-  create: documents
-  match: "**/*"
-  templates:
-  - post
 - type: heading
   label: Products
 - type: directory
@@ -38,21 +18,11 @@ sections:
   match: "**/*"
   templates:
   - product
-- type: directory
-  path: exampleSite/content/french/products
-  label: Products (fr)
-  create: documents
-  match: "**/*"
-  templates:
-  - product
 - type: heading
   label: Contact
 - type: document
   path: exampleSite/content/english/contact/_index.md
   label: Contact (en)
-- type: document
-  path: exampleSite/content/french/contact/_index.md
-  label: Contact (fr)
 - type: heading
   label: All Pages
 - type: directory
@@ -65,8 +35,6 @@ sections:
   label: All Page (fr)
   create: all
   match: "**/*"
-- type: heading
-  label: Translations
 - type: directory
   path: exampleSite/i18n
   label: i18n
